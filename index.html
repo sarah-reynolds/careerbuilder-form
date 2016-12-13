@@ -9,13 +9,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script type="text/javascript" src="validate.js"></script>
+	
 	
 </head>
 <body>
-<div class="container">
-	<div class="row col-sm-12 cbheader">
-		<img id="logo" src="cblogo1.png">
+<div class="container-fluid cbheader">
+	<div class="row">
+		<img class="pull-left" id="logo" src="cblogo1.png">
 	</div>
 </div>
 <div class="container-fluid page">
@@ -24,40 +24,42 @@
 		<h1>Sign Up</h1>
 		<h4>Already have an account? <a href="#">Sign in here</a></h4>
 		<hr />
+		<h4>Registration for <a href="#">employer or staffing agency</a></h4>
+		<div class="required-field grayital margin-bottom">Required Fields</div>
 			
 			<div class="form-group">
 				<label class="required-field">First Name</label>
-				<input type="text" class="form-control firstName">
+				<input type="text" id="firstName" class="form-control">
 				<div class="error firstName-error"></div>
 			</div>
 			
 			<div class="form-group">
 				<label class="required-field">Last Name</label>
-				<input type="text" class="form-control lastName">
-				<div class="error firstName-error"></div>
+				<input type="text" id="lastName" class="form-control">
+				<div class="error lastName-error"></div>
 			</div>
 
 			<div class="form-group">
 				<label class="required-field">Email</label>
-				<input type="email" class="form-control email">
+				<input type="email" id="email" class="form-control">
 				<div class="error email-error"></div>
 			</div>
 
 			<div class="form-group">
 				<label class="required-field">Zip</label>
-				<input type="text" class="form-control zip">
+				<input type="text" id="zip" class="form-control">
 				<div class="error zip-error"></div>
 			</div>
 
 			<div class="form-group">
 				<label class="required-field">Password</label>
-				<input type="password" class="form-control password">
+				<input type="password" id="password" class="form-control">
 				<div class="error password-error"></div>
 			</div>
 
 			<div class="form-group">
 				<label class="required-field">Confirm Password</label>
-				<input type="password" class="form-control password2">
+				<input type="password" id="password2" class="form-control">
 				<div class="error password2-error"></div>
 			</div>
 
@@ -78,6 +80,6 @@
 </div>
 
 	
-
+<script type="text/javascript" src="validate.js"></script>
 </body>
 </html>
