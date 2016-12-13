@@ -1,0 +1,57 @@
+body{
+	color: #343434;
+    font-size: 16px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.cbheader{
+	background-color: white;
+	height: 50px;
+}
+
+.page{
+	background-color: #F4F4F4;
+}
+
+.sign-up-form, .form{
+	background-color: white;
+	margin-top: 20px;
+}
+
+#logo{
+	width: 192px;
+	margin-top: 10px;
+}
+
+
+.required-field:before{
+	content: "* ";
+	color:  #FE453A;
+}
+
+.form-control{
+	height: 40px;
+}
+
+a{
+	color: #09A0DB;
+	text-decoration: none;
+}
+a:hover{
+	color: #09A0DB;
+	text-decoration: underline;
+}
+
+.error{
+	color: red;
+}
+
+.firstName-error, .lastName-error, .password-error{
+	display:  none;
+}
+
+.btn-green{
+	background: #85CE3F;
+	width: 545px;
+	color: white;
+}
